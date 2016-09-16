@@ -9,6 +9,7 @@ public class CountNumWith7 {
 		System.out.println(countSevens(num));
 	}
 	
+	//This method loops from 1 to n and uses the method haveSeven to check how many numbers have 7
 	private static int countSevens(int num) {
 		int count = 0;
 		for(int i = 1; i <= num; i++) {
@@ -19,6 +20,7 @@ public class CountNumWith7 {
 		return count;
 	}
 	
+	//This method is to check if a number has 7 as a digit
 	private static boolean haveSeven(int num) {
 		while(num > 0) {
 			if(num % 10 == 7) {
